@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 function Generator() {
 
@@ -38,7 +38,7 @@ function Generator() {
         <div className='generator-container'>
             <div className="input-container">
             
-                <h2>Let's Make You a Workout!</h2>
+                <h2>Lets Make You a Workout!</h2>
 
                 <form>
                     <div className='place-container'>
