@@ -33,7 +33,7 @@ def handle_query():
         completion = client.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[
-                {"role": "system", "content": "Be a helpful assistant"},
+                {"role": "system", "content": "Be a helpful workout trainer."},
                 {"role": "user", "content": query}
             ]
         )
@@ -41,9 +41,7 @@ def handle_query():
         result = completion.choices[0].message.content
         
         cleaned_result = result.strip().strip('`').strip('html')
-        
-        print(f"Cleaned OpenAI response: {cleaned_result}")
-        
+                
         return jsonify(response=cleaned_result)
     
     except Exception as e:
