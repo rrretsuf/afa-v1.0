@@ -1,0 +1,22 @@
+Na GitHubu je tvoj projekt razdeljen v dve glavni mapi:
+
+1. `frontend`
+- Vsebina: Datoteke za uporabniški vmesnik.
+- Tehnologije**: React.
+- Vse glavne Datoteke so v folderju SRC (source code)
+- Datoteke:
+  - `Generator.jsx`: Komponenta za vnos podatkov.
+  - `App.js`: Glavna komponenta.
+  - `index.css`: Slogi za aplikacijo.
+
+2. `backend`
+- Vsebina: Skripte za obdelavo podatkov.
+- Tehnologije: Flask in OpenAI.
+- Datoteke:
+  - `openai-api.py`: Skripta za komunikacijo z OpenAI API-jem.
+
+Povezava:
+1. Frontend: Uporabnik vnese podatke in klikne gumb za generiranje.
+2. Backend: Obdeluje podatke, pošlje jih OpenAI in vrne rezultat.
+3. Rezultat: Prikazan v uporabniškem vmesniku.
+
