@@ -12,7 +12,7 @@ function Generator() {
     const handleClick = async (e) => {
         e.preventDefault();
 
-        const query = `Generate an HTML page listing ${bodyPart} exercises with sets and reps. Workout at ${place} using ${equipment} for ${time}. No additional text, H2 as the title.`;
+        const query = `Generate an HTML page listing ${bodyPart} exercises with sets and reps. Workout at ${place} using ${equipment} for ${time} minutes. No additional text, H2 as the title.`;
 
         const url = 'http://127.0.0.1:5000/api/query';
         const options = {

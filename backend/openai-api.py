@@ -31,7 +31,7 @@ def handle_query():
             raise ValueError("Query is missing")
         
         completion = client.chat.completions.create(
-            model="gpt-3.5-",
+            model="gpt-3.5-turbo",
             messages=[
                 {"role": "system", "content": "Be a helpful workout trainer."},
                 {"role": "user", "content": query}
